@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const port = (process.env.PORT && 80) || 3000;
+const port = process.env.PORT || 80; // Heroku, or local or production
 
 const path = require("path");
 

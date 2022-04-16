@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "devStart": "nodemon src/server-app/server.js"
+    "devStart": "PORT=3000 nodemon src/server-app/server.js"
   },
   "eslintConfig": {
     "extends": [
