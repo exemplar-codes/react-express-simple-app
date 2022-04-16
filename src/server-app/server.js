@@ -6,7 +6,10 @@ const port = (process.env.PORT && 80) || 3000;
 
 const path = require("path");
 
+let visitsInSession = 0;
+
 app.get("/", (req, res) => {
+  console.log(`Visits this session: ${++visitsInSession}`);
   res.sendFile(path.resolve("build/index.html"));
 });
 
